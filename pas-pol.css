@@ -1,0 +1,385 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic,
+     "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+     line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    color: aliceblue;
+    width: 100%;
+    z-index: 3;
+}
+
+.mainvisual{
+    position: relative;
+    background-color: black;
+    z-index: 1;
+}
+
+.consept{
+    height: 900px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.product{
+    padding: 150px 110px;
+}
+
+.news{
+    background-color: #f6f6f6;
+    padding: 150px 110px;
+}
+
+.sns{
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.footer-nav{
+    background-color: #939899;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer{
+    background-color: #656c6e;
+    padding: 30px 0;
+}
+
+/* ELEMENT */
+
+/* ヘッダー */
+.header-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 70px;
+}
+
+.header-logo{
+    height: 70px;
+    width: 280px;
+}
+
+.header-nav{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 35px;
+}
+
+.header-nav a{
+    font-size: 14px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.header-nav a::after{
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: aliceblue;
+    bottom: -5px;
+    visibility: hidden;
+}
+
+.header-nav a:hover::after{
+    visibility: visible;
+}
+
+/* メインビジュアル */
+
+.mainvisual-image{
+    height: auto;
+}
+
+.mainvisual-arrow{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    height: 15px;
+    width: 25px;
+}
+
+.mainvisual-overlay{
+    position: absolute;
+    bottom: 0;
+}
+
+/* コンセプト */
+
+.consept-item{
+    position: absolute;
+    top: 120px;
+    left: 40%;
+    letter-spacing: 0.2em;
+}
+
+.consept-content{
+    margin-bottom: 1.5em;
+}
+
+.consept-content-title{
+    font-size: 3em;
+    margin-bottom: 80px;
+    margin-right: 30px;
+}
+
+.consept-content-text p{
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    position: relative;
+    transform: translateX(-50px);
+}
+
+.consept-content-image{
+    width: 250px;
+    height: 60px;
+    margin-bottom: 1.2em;
+}
+
+/* セクションタイトル */
+
+.section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.section-title p{
+    font-size: 30px;
+    font-weight: 50;
+    padding-bottom: 14px;
+    background: url(sectionTitle-underLine@2x.png)no-repeat;
+    background-position: 0 bottom;
+    background-size: 68px 8px;
+}
+
+.section-title a{
+    padding: 5px 40px;
+    border: solid black 1px;
+}
+
+.section-title a::after{
+    content: url(pas-pol/button-arrow@2x.png);
+    margin-left: 30px;
+}
+
+/* プロダクト */
+
+.product-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-content-part{
+    width: 28%;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+.product-image:hover{
+    opacity: 0.5;
+}
+
+.product-content-part p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0 10px 20px;
+}
+
+/* ニュース */
+
+.news-content-part{
+    margin-bottom: 50px;
+}
+
+.news-content-part a{
+    display: flex;
+}
+
+.news-content-part a:hover{
+    opacity: 0.5;
+}
+
+.news-image{
+    width: 300px;
+    height: 180px;
+}
+
+.news-content-item{
+    margin-left: 60px;
+}
+
+.news-content-title{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+.news-content-date{
+    font-size: 4px;
+    margin-bottom: 20px;
+    color: #656c6e;
+}
+
+.news-content-text{
+    font-size: 13px;
+    color: #656c6e;
+}
+
+/* sns */
+
+.sns-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Gill Sans Std Book", sans-serif;
+}
+
+.facebook{
+    color: #4878a9;
+    border: solid #4878a9 1px;
+    padding: 12px 8px;
+}
+
+.twitter{
+    color: #70bdd3;
+    border: solid #70bdd3 1px;
+    margin: 0 45px;
+    padding: 12px 8px;
+}
+
+.bookmark{
+    color: #2f9bcd;
+    border: solid #2f9bcd 1px;
+    padding: 12px 8px;
+}
+
+/* フッターナビ */
+
+.footer-nav-item{
+    color: #f6f6f6;
+    font-size: 13px;
+}
+
+.footer-nav-item a{
+    margin: 0 20px;
+}
+
+/* フッター */
+
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+    color: #f6f6f6;
+    font-size: 12px;
+}
+
+.footer-logo{
+    height: 100px;
+}
+
+/* スマートフォン用 */
+
+
+@media screen and (max-width: 767px){
+
+    /* ヘッダー（スマホ） */
+
+    header{
+        display: none;
+    }
+
+    /* メインビジュアル（スマホ） */   
+
+    .mainvisual-image{
+        height: 900px;
+        position: relative;
+    }
+
+    .mainvisual-image::after{
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background: url(siteLogo-sp@2x.png);
+    }
+
+    /* コンセプト（スマホ） */
+
+    .consept-item{
+        left: 32%;
+    }
+
+    .consept-content-title{
+        margin-bottom: 55px;
+    }
+
+    /* プロダクト（スマホ） */
+
+    .product{
+        padding:130px 50px ;
+    }
+
+    .product-content{
+        display: block;
+    }
+
+    .product-content-part{
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        width: 100%;
+    }
+
+    .product-image{
+        width: 280px;
+    }
+
+    .product-content-part p{
+        font-size: 17px;
+        margin: 20px 0;
+        max-width: 390px;
+    }
+
+    /* ニュース（スマホ） */
+
+    .news{
+        padding: 130px 50px;
+    }
+
+    .news-image{
+        width: 270px;
+    }
+
+    .news-content-part{
+        margin-bottom: 65px;
+    }
+
+    .news-content-item{
+        margin-left: 25px;
+    }
+
+    /* フッター（スマホ） */
+
+    .footer-item{
+        margin: 0 50px;
+    }
+
+
+
+
+}
